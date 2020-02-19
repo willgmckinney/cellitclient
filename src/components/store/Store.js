@@ -6,6 +6,10 @@ export class Store extends Component {
   render() {
     return (
       <Pane>
+        <Pane className='App-header'>
+          <h1>Cell/it!</h1>
+          <p>*Anatomically Needed*</p>
+        </Pane>
         <Pane display='flex' padding={16} background='tint2' borderRadius={3}>
           <Pane flex={1} alignItems='center' display='flex'>
             <Heading size={600}>Our Items For Sale</Heading>
