@@ -4,6 +4,7 @@ import { BrowserRouter as Router,Route, Link, Switch } from 'react-router-dom';
 import Store from '../../components/store/Store';
 import Auth from'../../components/auth/Auth';
 import Cart from '../../components/cart/Cart';
+import About from '../about/About';
 import Admin from '../../components/admin/Admin'
 
 
@@ -32,6 +33,10 @@ export class Navbar extends Component {
               <Link className='link' to= '/admin'>
               <Button>Admin</Button>
               </Link>
+
+              <Link className='link' to= '/about'>
+              <Button>About</Button>
+              </Link>
             </Pane>
           </Pane>
           
@@ -48,6 +53,9 @@ export class Navbar extends Component {
               </Route>
               <Route exact path='/admin'>
                   <Admin/>
+              </Route>
+              <Route exact path='/about'>
+                  <About/>
               </Route>
             </Switch>
           </div>
